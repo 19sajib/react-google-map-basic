@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Direction from './Direction'
+import Directions from './test/Directions'
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Directions
+     />
   </React.StrictMode>,
   document.getElementById('root')
 );
