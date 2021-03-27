@@ -4,7 +4,6 @@ import Map from './Map2'
 
 const Directions = () => {
     const MapLoader = withScriptjs(Map);
-    const API = `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAP_API}`
 
   return (
 

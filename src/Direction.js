@@ -11,17 +11,17 @@ class Direction extends React.Component {
     render () {
       const google = window.google
       console.log(google);
-        const MapWithADirectionsRenderer = compose(
-            withProps({
-              googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDt9br636Un8x819x8DyqF-eIS1pgO-xMs&v=3.exp&libraries=geometry,drawing,places",
-              loadingElement: <div style={{ height: `100%` }} />,
-              containerElement: <div style={{ height: `400px` }} />,
-              mapElement: <div style={{ height: `100%` }} />,
-            }),
-            withScriptjs,
-            withGoogleMap,
-            lifecycle({
-              componentDidMount() {
+      const MapWithADirectionsRenderer = compose(
+        withProps({
+          googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDt9br636Un8x819x8DyqF-eIS1pgO-xMs&v=3.exp&libraries=geometry,drawing,places",
+          loadingElement: <div style={{ height: `100%` }} />,
+          containerElement: <div style={{ height: `400px` }} />,
+          mapElement: <div style={{ height: `100%` }} />,
+        }),
+        withScriptjs,
+        withGoogleMap,
+        lifecycle({
+          componentDidMount() {
                 const DirectionsService = new google.maps.DirectionsService();
           
                 DirectionsService.route({

@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import Direction from './Direction'
 import Directions from './test/Directions'
+import PlaceAutocomplete from './Autocomplete/PlaceAutocomplete'
+import LocationSearchInput from './Autocomplete/LocationSearchInput'
+import ReactAutocomplete from './Autocomplete/ReactAutocomplete'
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Directions
+    <ReactAutocomplete
      />
   </React.StrictMode>,
   document.getElementById('root')
