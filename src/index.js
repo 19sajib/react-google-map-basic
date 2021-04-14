@@ -12,7 +12,7 @@ import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReactAutocomplete
+    <App
      />
   </React.StrictMode>,
   document.getElementById('root')
